@@ -1,0 +1,230 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	color: black;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+.wrapper {
+	max-width: 1340px;
+	margin: 0 auto;
+	padding: 30px 95px;
+}
+.calc_block {
+	width: 100%;
+	outline: 1px solid rgb(192, 175, 175);
+	margin: 0 auto;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 0%, #5C5A5A 150%);
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< Block_2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.block_5 {
+	font-family: 'PT Sans Caption', sans-serif;
+	height: 100vh;
+	background-image: linear-gradient(to right, rgba(62, 62, 145, 0.544), rgba(62, 62, 145, 0.544)), url(./img5/5_block/contact.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-color: #000000e0;
+}
+.block5_text, .contact_form {
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px;
+	padding-top: 145px;
+}
+.block5_main_text {
+	padding-bottom: 25px;
+	color: #E4DFDB;
+}
+.block5_main_text:hover {
+	color: rgb(255, 217, 0);
+	transition: 0.7s;
+}
+
+.block5_additional_text {
+	width: 501px;
+	font-size: 22px;
+	color: #E4DFDB;
+	text-align: left;
+}
+.contact_form  {
+	margin-left: 25px;
+	width: 490px;
+}
+form {
+	font-family: 'PT Sans Caption', sans-serif;
+	height: 246px;
+	border: 4px solid #E4DFDB;
+}
+#applicationName, #applicationLastname, #applicationEmail, #applicationMessage {
+	background-color: transparent;
+	color: #E4DFDB;
+	font-family: 'PT Sans Caption', sans-serif;
+	font-size: 18px;
+	resize: none;
+}
+#applicationName {
+	margin-right: -5px;
+	height: 44px;
+	width: 220px;
+}
+#applicationLastname {
+	height: 44px;
+	width: 252px;
+}
+#applicationEmail {
+	width: 475px;
+	height: 44px;
+}
+#applicationMessage {
+	width: 471px;
+	height: 150px;
+	color: #E4DFDB;
+	overflow: auto;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+	color: #E4DFDB;
+}
+.contact_form p {
+	padding: 15px;
+	color: #E4DFDB;
+}
+#btn-send {
+	width: 135px;
+	height: 45px;
+	/*border-radius: 15px;*/
+	margin-top: 15px;
+	font-size: 19px;
+	background: #161414e0;
+	color: #E4DFDB;
+	cursor: pointer;
+	border-color: #05050547;
+	}
+textarea, input {
+	appearance: none;
+	outline: 0;
+	box-shadow: none;
+	padding-left: 15px;
+}
+input:focus, textarea:focus {
+	border: 1.5px solid rgba(255, 217, 0, 0.66);
+	 /* Рамка при получении фокуса */
+}
+#btn-send:hover {
+	background: rgba(255, 213, 0, 0.949);
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: 0.5s;
+	cursor: pointer;
+	color: black;
+}
+.footer {
+	height: 100px;
+	background: rgba(255, 213, 0, 0.949);
+}
+.footer img {
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
+	opacity: 0.9;
+	border-radius: 50%;
+}
+.footer img:hover {
+	opacity: 1;
+	cursor: pointer;
+	background-color: rgb(255, 223, 0);
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	transition: 0.5s;
+}
+/* >>>>>>>>>>>>>> Переключения Вперед-Назад <<<<<<<<<<<<<<<< */
+.arrows {
+	position: relative;
+	height: 100px;
+}
+.arrows_line {
+	position: absolute;
+	top: 54px;
+	left: 505px;
+}
+.arrow {
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	margin-top: 30px;
+	position: relative;
+}
+.arrow:not(:last-child) {
+	margin-right: 0px;
+}
+.arrows_line_middle {
+	width: 150px;
+	height: 3px;
+	background: rgba(255, 247, 244, 0.9);
+	position: relative;
+}
+.arrows_line_middle::before,
+.arrows_line_middle::after {
+	content: "";
+	position: absolute;
+	width: 75px;
+	height: 3px;
+	background: rgba(255, 249, 244, 0.9);
+	left: 37px;
+	transition: .5s;
+}
+.arrows_line_middle:before {
+	transform: translateY(-20px);
+}
+.arrows_line_middle:after {
+	transform: translateY(20px);
+}
+.arrows_left {
+	background: rgba(40, 142, 231, 0.1);
+}
+.arrows_right {
+	background: rgba(224, 189, 18, 0.1);
+}
+.arrows_line_middle:hover .arrows_line_middle:before {
+	transform: translate(40px, -16px) rotate(25deg);
+}
+/* >>>>>>>> Наведення мишою класи для JS <<<<<<<<<<<<< */
+.arrow_text_left {
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	left: 15px;
+	top: 10px;
+	opacity: 0;
+	transition: .3s;
+}
+.arrow_text_right {
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	opacity: 0;
+	transition: .3s;
+}
+.activeRight {
+	background: rgb(255, 217, 0);
+	position: relative;
+}
+.activeRight::before {
+	transform: translate(40px, -12px) rotate(16deg);
+	background: rgb(255, 217, 0)
+}
+.activeLeft {
+	background: rgb(255, 217, 0);
+	vertical-align: middle;
+	position: relative;
+}
+.activeLeft::after {
+	transform: translate(-38px, 12px) rotate(16deg);
+	background: rgb(255, 217, 0);
+}

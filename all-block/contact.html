@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+		integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+	<div class="block_5">
+		<div class="wrapper">
+			<div class="calc_block ">
+				<div class="block5_text"> 
+					<h1 class="block5_main_text">Свяжитесь с нами </h1>
+					<p class="block5_additional_text">
+						Готовы начать работу? Отправьте
+						сообщение и свои контакты нам, и мы
+						свяжемся с вами в течении двух дней.
+						Схема работы с каждым клиентом
+						будет разработана индивидуально 
+						в зависимости от поставленных задач и сложности проекта.
+					</p>
+				</div>
+
+				<div class="contact_form">
+					<form id="application" action="application.php" method="POST" name="application">
+						<input name="name" id="applicationName" maxlength="20" placeholder="Ваше имя" required />
+						<input name="lastname" id="applicationLastname" maxlength="20" placeholder="Ваша фамилия" required /> </br>
+						<input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="Введите ваш E-mail" required /></br>
+						<textarea id="applicationMessage" placeholder="Введите ваше сообщение"></textarea>
+					</form>	
+
+					<p>Наши специалисты свяжутся с вами как можно скорее</p>
+					<button id="btn-send" class="applicationButton" type="submit" form="application">Отправить </button>
+				</div>
+
+				<div class="arrows">
+					<div class="arrows_line">
+						<div class="arrows_line_middle activeRight" id="arrow_middle"></div>
+					</div>
+					<a class="arrow arrows_left" id="arrows_left" href="calc.html" target="_self">
+					<span id="arrow_text_left" class="arrow_text_left" style="opacity: 0;">Previous</span>
+					</a>
+					<a class="arrow arrows_right" id="arrows_right" href="#">
+					<span id="arrow_text_right" class="arrow_text_right" style="opacity: 1;"></span>
+					</a>
+				</div>
+
+				<div class="footer">
+					<a href="#"><img src="./img5/5_block/slice-1.png"></a>
+					<a href="#"><img src="./img5/5_block/slice-2.png"></a>
+					<a href="#"><img src="./img5/5_block/slice-3.png"></a>
+					<a href="#"><img src="./img5/5_block/slice-4.png"></a>
+					<a href="#"><img src="./img5/5_block/slice-5.png"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="btn-next.js"></script>
+</body>
+</html>
